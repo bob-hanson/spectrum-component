@@ -1,12 +1,12 @@
 {
   "name": "spectrum-component",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "version": "0.1.0",
+  "description": "Ember SLC Meetup - Component for Ember Engines",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Bob Hanson",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -18,7 +18,8 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-cli-babel": "^5.1.7"
+    "ember-cli-babel": "^5.1.7",
+    "ember-cli-htmlbars": "^1.1.1"
   },
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.5",
@@ -42,7 +43,6 @@
     "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",
     "ember-source": "~2.11.0",
-    "ember-welcome-page": "^2.0.2",
     "loader.js": "^4.0.10"
   },
   "engines": {

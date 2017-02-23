@@ -1,0 +1,21 @@
+<header class='heading'>{{ spectrumTitle }}</header>
+
+<ul class="track-list">
+  {{#each currentTracks as |currentTrack|}}
+    <li {{action 'triggerLoadRequestedTrack' currentTrack.trackUrl }}>{{ currentTrack.trackInfo }}</li>
+  {{/each}}
+</ul>
+
+<div id="visualizer"></div>
+
+<div id="controlPanel" class="hidden">
+  <div id="tab"><div id="toggleButton" {{action "triggerToggleControlPanel"}} ><i class="icon-menu"></i></div></div>
+  <div id="trackInfoPanel" class="hidden">
+      <img id="infoImage" src="">
+      <div id="infoArtist"></div>
+      <div id="infoTrack"></div>
+  </div>
+  <div id="playerControls">
+      <audio id="player" controls="" autoplay="" preload autobuffer></audio>
+  </div>
+</div>
